@@ -1,1 +1,7 @@
- 
+h3 {
+    color: orange;
+}
+button {
+    color: black;
+    background-color: lightgreen;
+}
