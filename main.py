@@ -1,7 +1,9 @@
 import os
 from fastapi import FastAPI
-from livereload import Server
 from starlette.responses import HTMLResponse
+import requests
+from io import  BytesIO
+import questions as que
 
 app = FastAPI()
 
