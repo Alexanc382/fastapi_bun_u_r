@@ -6,17 +6,101 @@
 </head>
 <body>
     <header>
-        <h2>fffdsffdsfsdfsdsdfsdf</h2>
+        <h2>Какая ты булочка?</h2>
+        <p>Выбери только один вариант ответа</p>
     <main>
-        <form method="POST" action="/login"> <!--форма с помощью post-запроса отправляет данные на сервер-->
-            <input type="text" name="username"/>
-            <input type="password" name="password"/>
-            <button type="submit">Сохранить</button>
-        </form>
+    <form method="post">
+
+        <!--первый вопрос -->
+        <h3>Как ты проводишь свободное время?</h3>
+        <label>
+            <input type="radio" name="choice" value="answer_1_1 ">
+            Люблю весело и непринужденно тусоваться с друзьями
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option2">
+            Предпочитаю расслабиться с чашкой кофе и хорошей книгой
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option3">
+            Часто занят/занята делами и стараюсь не отвлекаться
+        </label><br>
+
+        <!--второй вопрос -->
+        <h3>Твой любимый стиль в одежде?</h3>
+        <label>
+            <input type="radio" name="choice" value="answer_1_1 ">
+            Яркий и привлекающий внимание, люблю выделяться
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="choice" value="option2">
+            Элегантный, стильный, классический
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="choice" value="option3">
+            Практичный и простой, без лишних деталей
+        </label><br>
+
+        <!--третий вопрос -->
+        <h3>Как ты реагируешь на стресс?</h3>
+        <label>
+            <input type="radio" name="choice" value="answer_1_1 ">
+            Стараюсь справляться с юмором и улыбкой
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option2">
+            Ищу отдых и время для себя, чтобы восстановить силы
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option3">
+            Работаю еще усерднее, чтобы решить все проблемы
+        </label><br><br>
+
+        <!-- четвертый вопрос -->
+        <h3>Какой напиток ты выбираешь чаще всего?</h3>
+        <label>
+            <input type="radio" name="choice" value="answer_1_1 ">
+            Сладкие коктейли или газировка
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option2">
+            Кофе или чай с круассаном
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option3">
+            Вода или простой чай без добавок
+        </label><br>
+
+        <!-- пятый вопрос -->
+        <h3>Как тебя описали бы друзья?</h3>
+        <label>
+            <input type="radio" name="choice" value="answer_1_1 ">
+            Душа компании, всегда веселая и энергичная
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option2">
+            Утончённая и немного загадочная
+        </label><br>
+        <label>
+            <input type="radio" name="choice" value="option3">
+            Надежный и серьёзный человек, на которого можно положиться
+        </label><br><br>
+
+
+
+
+        <button type="submit">Отправить</button>
+    </form>
+
     </main>
-    <script>
-        setInterval(() => {
-            location.reload();
-        }, 2000); // обновление каждые 2 секунды
-    </script>
+
+
+
+<!--    <script>-->
+<!--        setInterval(() => {-->
+<!--            location.reload();-->
+<!--        }, 2000); // обновление каждые 2 секунды-->
+<!--    </script>-->
 </body>
